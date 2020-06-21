@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@469&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Stoper meczowy</title>
+</head>
+<body>
+    <div class="contentContainer">
+        <div id="time">
+            00:00
+        </div>
+    </div>
+    <div class="buttonContainer">
+        <button class="button" id="1Half" onclick="Ihalf()">
+            1 połowa
+        </button>
+        <button class="button" id="2Half" onclick="IIhalf()">
+            2 połowa
+        </button>
+        <button class="button" id="3Half" onclick="IIIhalf()">
+            1 dogrywka
+        </button>
+        <button class="button" id="4Half" onclick="IVhalf()">
+            2 dogrywka
+        </button>
+        <button class="button" id="+1m" onclick="plusOne()">
+            +1 minuta
+        </button>
+        <button class="button" id="-1m" onclick="minusOne()">
+            -1 minuta
+        </button>
+    </div>
+    <div class="startButton">
+        <button class="start" id="start" onclick="start()">
+            start
+        </button>
+    </div>
+    <div id="info">
+        <h3>Zanim zaczniesz!</h3>
+        Zielone przyciski dają początkowy czas. <br>
+        1 połowa - 00:00 <br>
+        2 połowa - 45:00 <br>
+        1 dogrywka - 90:00 <br>
+        2 dogrywka - 105:00 <br>
+        Przycisk "start" zmienia się w "stop" po wystartowaniu. <br>
+        Są 2 przyciski, które zmieniają czas o minutę. <br>
+        <h3>Zaczynamy!</h3>
+        1. Wybierz połowę.<br>
+        2. Jeżeli się spóźnisz z włączeniem stopera dodaj minutę.<br>
+        3. Wybierz start.<br>
+        4. Gdy połowa się zakończy kliknij stop.<br>
+        <p style="color:red">Zmiana połowy w czasie gdy stoper już działa będzie skutkować zatrzymaniem się stopera. Musisz wtedy jeszcze raz wystartować! <br></p>
+        W razie problemów lub zmian proszę pisać na pawel1999r@gmail.com.<br> 
+    </div>
+    <!--<button class="button-dark" onclick="darkMode()">Zmień motyw</button> !-->
+    <footer>
+        Paweł Nowak 2020. Pozdrawiam Cieplutko <3
+    </footer>
+</body>
+</html>
